@@ -75,7 +75,7 @@ function HomeDAO() {
   };
 
   const connect = async () => {
-    //Step 2 - Connect Portkey Wallet
+    //Step B - Connect Portkey Wallet
     const accounts = await provider?.request({
       method: MethodsBase.REQUEST_ACCOUNTS,
     });
@@ -86,7 +86,7 @@ function HomeDAO() {
   };
 
   const initializeAndJoinDAO = async () => {
-    //Step 3 - Write Initialize Smart Contract and Join DAO Logic
+    //Step C - Write Initialize Smart Contract and Join DAO Logic
     try {
       const accounts = await provider?.request({
         method: MethodsBase.ACCOUNTS,
@@ -111,7 +111,7 @@ function HomeDAO() {
   };
 
   const voteYes = async (index: number) => {
-    //Step 6 - Write Vote Yes Logic
+    //Step F - Write Vote Yes Logic
     try {
       const accounts = await provider?.request({
         method: MethodsBase.ACCOUNTS,
@@ -172,7 +172,7 @@ function HomeDAO() {
   };
 
   useEffect(() => {
-    //Step 7 - Use Effect to Fetch Proposals
+    //Step G - Use Effect to Fetch Proposals
     const fetchProposals = async () => {
       try {
         const accounts = await provider?.request({
